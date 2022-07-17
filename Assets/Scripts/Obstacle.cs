@@ -111,6 +111,10 @@ public class Obstacle : MonoBehaviour
         {
             _healthBar.Show(true);
         }
+        else if (sender.State == GameState.PuckThrown && CurrentHp < _maxHp)
+        {
+            _healthBar.Show(true);
+        }
         else
         {
             _healthBar.Show(false);
